@@ -59,3 +59,13 @@ def search(request):
     myposts = regis.objects.filter(phone=search_query , first_name=search_query)
     mycount = regis.objects.all().count()
     return render(request,"search.html",{'mycount' :mycount , 'myposts' : myposts })
+
+
+def appoints(request):
+    if request.method == "POST":
+        name = request.POST.get('phone_delete')
+        delete_user=appointment.objects.filter(name=name)
+        delete_user.delete()
+        return redirect("appoints")
+    myposts = appointment.objects.all()
+    return render(request,"appoints.html",{'myposts':myposts})
