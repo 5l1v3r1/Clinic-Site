@@ -1,0 +1,286 @@
+{%block content%}
+{%load static%}
+<html>
+<head>
+	<title>Social Networking Site</title>
+	<link rel = "icon" href ="logo.png"type = "image/x-icon">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+
+});
+</script>
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+	input[type=text]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+input[type=email]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+select {
+  width: 30%;
+  padding: 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Hepta Slab', serif;
+}
+
+
+.btn.btn-outline-primary{
+	width: 40%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+._hep{
+margin:15px;
+font-size: 30px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+margin: 15px;
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+.dwn_fnt{
+	margin: 15px;
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+	.email_bad{
+
+font-family: 'Hepta Slab', serif;
+font-size: 15px;
+color:red;
+	}
+
+@media only screen and (max-width:760px){
+
+.center { /* top logo css */
+  display: block;
+  width: auto;
+  height:60px;
+  margin-left: none;
+  margin-right: auto;
+}
+.nav_img{
+	display: inline-block;
+  width: auto;
+  height:30px;
+  margin-left: auto;
+  margin-right: none;
+}
+
+.doc{
+width:auto;
+height:auto;
+border-radius:20px;
+background:rgb(245, 245, 250);
+  margin:15px;
+  padding: 20px;
+  display:block;
+}
+.boxes{
+	display:block;
+}
+.login{
+width:auto;
+height:auto;
+border-radius: 20px;
+background:rgb(245, 245, 250);
+margin:15px;
+padding: 20px;
+display:block;
+}
+._hep{
+font-size: 25px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+hr._dwnhr{
+	display:block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+.dwn_fnt{
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+}
+@media only screen and (min-width:761px){
+
+.center { /* top logo css */
+  display: block;
+  margin-left: none;
+  margin-right: auto;
+  width: auto;
+  height:80px;
+  font-family: 'Hepta Slab', serif;
+}
+.nav_img{
+	display: inline-block;
+  width: auto;
+  height:30px;
+  margin-left: auto;
+  margin-right: none;
+  font-family: 'Hepta Slab', serif;
+}
+
+.doc{
+  float:left;
+width:40%;
+height:auto;
+border-radius:20px;
+background:rgb(245, 245, 250);
+margin-top: 40px;
+  margin-left: 7%;
+  margin-right: 5px;
+  margin-bottom:5px;
+  padding: 20px;
+  display:block;
+}
+.login{
+
+width:40%;
+height:auto;
+border-radius: 20px;
+background:rgb(245, 245, 250);
+margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 0px;
+padding: 20px;
+margin-bottom: 40px;
+display:inline-block;
+}
+._hep{
+font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+shape-outside: none;
+}
+}
+hr._dwnhr{
+	display:block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+.dwn_fnt{
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+.class1{
+  display: block;
+  margin-left: none;
+  margin-right: auto;
+  width: auto;
+  height:80px;
+  font-family: 'Hepta Slab', serif;
+}
+}
+</style>
+</head>
+<body ng-app="myApp">
+	<nav class="navbar sticky-top navbar-light bg-light">
+		<img src="{%static 'img/logo.png'%}" class="center">
+		<a class="navbar-brand" href="#"><p class="nav_img">Patient count : {{mycount}}</p></a>
+
+
+
+
+</nav>
+
+<div class="boxes">
+
+  <div class="container">
+  <form action="search" method="post" name="myForm"id="sinup" ng-controller="validateCtrl">
+    {% csrf_token %}
+
+    <input type="text" name="search_query"  id="sinup_nam" value="" placeholder="Search Using Phone Number"  required>
+    	<button type="submit" id="mysubmit" class="btn btn-outline-primary" >Search</button>
+
+  </div>
+</form>
+</div>
+</details>
+
+{%for item in myposts %}
+
+<div class="boxes">
+<div class="doc">
+
+
+	<p class="_hep"	><b>NAME:</b>&nbsp;&nbsp;&nbsp;{{item.first_name}} {{item.last_name}} </p>
+	<p class="_hep"	><b>PHONE:</b>&nbsp;&nbsp;&nbsp;{{item.phone}} </p>
+  <p class="_hep"	><b>LOCATION:</b>&nbsp;&nbsp;&nbsp;{{item.location}} </p>
+  <p class="_hep"	><b>GENDER:</b>&nbsp;&nbsp;&nbsp;{{item.gender}} </p>
+  <p class="_hep"	><b>DOB:</b>&nbsp;&nbsp;&nbsp;{{item.day}} / {{item.month}} / {{item.year}}  </p>
+
+
+</div>
+</div>
+
+{%endfor%}
+
+
+{%endblock%}
+</body>
+</html>

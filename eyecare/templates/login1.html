@@ -1,0 +1,259 @@
+{%load static%}
+<html>
+<head>
+<title>Doctor Login</title>
+	<link rel = "icon" href ="logo.png"type = "image/x-icon">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+
+});
+</script>
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+	input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+select {
+  width: 30%;
+  padding: 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Hepta Slab', serif;
+}
+
+
+.btn.btn-outline-primary{
+	width: 40%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+._hep{
+margin:15px;
+font-size: 30px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+margin: 15px;
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+.email_bad{
+font-family: 'Hepta Slab', serif;
+font-size: 15px;
+color:red;
+	}
+
+@media only screen and (max-width:760px){
+
+.center { /* top logo css */
+  display: block;
+  width: auto;
+  height:60px;
+  margin-left: none;
+  margin-right: auto;
+}
+.nav_img{
+	display: inline-block;
+  width: auto;
+  height:30px;
+  margin-left: auto;
+  margin-right: none;
+}
+
+.doc{
+width:auto;
+height:auto;
+border-radius:20px;
+background:rgb(245, 245, 250);
+margin-top: 40px;
+  margin:5px;
+  padding: 20px;
+  display:inline-block;
+}
+.login{
+width:auto;
+height:auto;
+border-radius: 20px;
+background:rgb(245, 245, 250);
+margin-top:50px;
+margin-bottom:10px;
+margin-left:10px;
+margin-right:10px;
+padding: 20px;
+
+display:block;
+}
+._hep{
+font-size: 25px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+hr{
+	display:block;
+	margin-top:25%;
+    margin-bottom:auto;
+    margin-right:auto;
+    margin-left:auto;
+	border-style: inset;
+	border-width: 1px;
+}
+.dwn_fnt{
+	margin:10px;
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+}
+@media only screen and (min-width:761px){
+
+.center { /* top logo css */
+  display: block;
+  margin-left: none;
+  margin-right: auto;
+  width: auto;
+  height:80px;
+}
+.nav_img{
+	display: inline-block;
+  width: auto;
+  height:30px;
+  margin-left: auto;
+  margin-right: none;
+}
+
+.doc{
+width:40%;
+height:auto;
+border-radius:20px;
+background:rgb(245, 245, 250);
+margin-top: 40px;
+  margin-left: auto;
+  margin-right:auto;
+  margin-bottom:5px;
+  padding: 20px;
+  display:inline-block;
+}
+.login{
+width:42%;
+height:auto;
+border-radius: 20px;
+background:rgb(245, 245, 250);
+margin-top: 5%;
+margin-left: 30%;
+margin-right: 28%;
+margin-bottom:18%;
+padding: 20px;
+display:inline-block;
+}
+._hep{
+font-size: 30px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+}
+hr{
+	display:block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+.dwn_fnt{
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+}
+</style>
+
+</head>
+<body ng-app="myApp">
+	<nav class="navbar sticky-top navbar-light bg-light">
+		<img src="{%static 'img/logo.png'%}" class="center">
+    <p class="_fnt">EyeCare Clinic</p>
+
+
+</nav>
+
+<div class="login">
+			<form action="login1" method="post" name="myForm" id="sinup" ng-controller="validateCtrl">{% csrf_token %}
+
+				<p class="_hep" align="center">Doctor's Login</p>
+				<input type="text" name="username1" id="val_email" placeholder="Username"    required>
+				<!--
+				<span ng-show="myForm.email.$dirty && myForm.email.$invalid" class="email_bad"id="email_bad">
+
+					<span ng-show="myForm.email.$error.required">Email is required.</span>
+                    <span ng-show="myForm.email.$error.email">Invalid email address.</span>
+                </span> -->
+
+				 <input type="Password" name="password" id="psw"placeholder="Password" ng-model="password" required>
+				 <span ng-show="myForm.password.$dirty && myForm.password.$invalid" class="email_bad"id="email_bad">
+
+                </span>
+	            <center>
+					<button type="submit" id="mysubmit"class="btn btn-outline-primary" ng-disabled="myForm.user.$dirty && myForm.user.$invalid || myForm.email.$dirty && myForm.email.$invalid || myForm.password.$dirty && myForm.password.$invalid">Login</button>
+				</center>
+
+		</form>
+	</div>
+	<hr>
+	<p class="dwn_fnt"> &#169 EyeCare Clinic , All Rights Reserved</p>
+
+</body>
+</html>

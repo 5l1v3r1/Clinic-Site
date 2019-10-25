@@ -1,0 +1,381 @@
+{%load static%}
+<html>
+<head>
+	<title>Social Networking Site</title>
+	<link rel = "icon" href ="logo.png"type = "image/x-icon">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script>
+var app = angular.module('myApp', []);
+app.controller('validateCtrl', function($scope) {
+
+});
+</script>
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap');
+	input[type=text]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+select {
+  width: 30%;
+  padding: 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+font-family: 'Hepta Slab', serif;
+}
+input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Hepta Slab', serif;
+}
+
+
+.btn.btn-outline-primary{
+	width: 40%;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+._hep{
+margin:15px;
+font-size: 30px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+margin: 15px;
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+.dwn_fnt{
+	margin: 15px;
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+	.email_bad{
+
+font-family: 'Hepta Slab', serif;
+font-size: 15px;
+color:red;
+	}
+
+@media only screen and (max-width:760px){
+
+.center { /* top logo css */
+  display: block;
+  width: auto;
+  height:60px;
+  margin-left: none;
+  margin-right: auto;
+}
+.nav_img{
+	display: inline-block;
+  width: auto;
+  height:30px;
+  margin-left: auto;
+  margin-right: none;
+}
+
+.doc{
+width:auto;
+height:auto;
+border-radius:20px;
+background:rgb(245, 245, 250);
+  margin:15px;
+  padding: 20px;
+  display:block;
+}
+.login{
+width:auto;
+height:auto;
+border-radius: 20px;
+background:rgb(245, 245, 250);
+margin:15px;
+padding: 20px;
+display:block;
+}
+._hep{
+font-size: 25px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+hr._dwnhr{
+	display:block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+.dwn_fnt{
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+}
+@media only screen and (min-width:761px){
+
+.center { /* top logo css */
+  display: block;
+  margin-left: none;
+  margin-right: auto;
+  width: auto;
+  height:80px;
+}
+.nav_img{
+	display: inline-block;
+  width: auto;
+  height:30px;
+  margin-left: auto;
+  margin-right: none;
+}
+
+.doc{
+  float:left;
+width:40%;
+height:auto;
+border-radius:20px;
+background:rgb(245, 245, 250);
+margin-top: 40px;
+  margin-left: 7%;
+  margin-right: 5px;
+  margin-bottom:5px;
+  padding: 20px;
+  display:inline-block;
+}
+.login{
+
+width:40%;
+height:auto;
+border-radius: 20px;
+background:rgb(245, 245, 250);
+margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 0px;
+padding: 20px;
+margin-bottom: 40px;
+display:inline-block;
+}
+._hep{
+font-size: 30px;
+font-family: 'Hepta Slab', serif;
+}
+._fnt{
+font-size: 20px;
+font-family: 'Hepta Slab', serif;
+}
+}
+hr._dwnhr{
+	display:block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+}
+.dwn_fnt{
+	font-size: 12px;
+	font-family: 'Hepta Slab', serif;
+}
+}
+</style>
+</head>
+<body ng-app="myApp">
+	<nav class="navbar sticky-top navbar-light bg-light">
+		<img src="{%static 'img/logo.png'%}" class="center">
+  <p class="_fnt">Doctor's Panel</p>
+
+
+</nav>
+
+<div class="boxes">
+<div class="doc">
+<p class="_fnt">Search Patient</p>
+<form action="search" method="post">
+	{%csrf_token%}
+&nbsp;&nbsp;<button type="submit" id="mysubmit" class="btn btn-outline-primary" >Search</button>
+</form>
+</div>
+</div>
+
+<!--
+<div class="boxes">
+<div class="doc">
+<p class="_fnt">All Patients</p>
+<form action="all_pat" method="post">
+	{%csrf_token%}
+&nbsp;&nbsp;<button type="submit" id="mysubmit" class="btn btn-outline-primary" ></button>
+</form>
+</div>
+</div>
+-->
+
+
+	<div class="boxes">
+
+	<div class="login">
+			<form action="main" method="post" name="myForm"id="sinup" ng-controller="validateCtrl">
+				{% csrf_token %}
+				<p class="_hep" align="center">Register a Patient</p>
+				<input type="text" name="name" ng-model="user" id="sinup_nam" value="" placeholder="First Name"  required>
+
+
+				<input type="text" name="username" ng-model="username" id="sinup_usernam" value="" placeholder="Last name"  required>
+
+        <input type="text" name="email" id="val_email" placeholder="Phone Number"   required>
+        <input type="text" name="password" id="psw"placeholder="Patient Location"  required>
+
+
+				 <p class="_fnt"><lable for="day_sel">Birthday</lable> </p>
+				<!-- Example single danger button -->
+				<div class="container">
+<div class="btn-group">
+  <select required class="btn btn-primary dropdown-toggle" data-toggle="dropdown" name="birthday_date" aria-haspopup="true" aria-expanded="false"id="sel_day">
+   	<option class="dropdown-item" value="">Day</option>
+   	<option class="dropdown-item"id="i1">1</option>
+    <option class="dropdown-item"id="i2">2</option>
+    <option class="dropdown-item"id="i3">3</option>
+    <option class="dropdown-item"id="i4">4</option>
+    <option class="dropdown-item"id="i5">5</option>
+    <option class="dropdown-item"id="i6">6</option>
+    <option class="dropdown-item"id="i7">7</option>
+    <option class="dropdown-item"id="i8">8</option>
+    <option class="dropdown-item"id="i9">9</option>
+    <option class="dropdown-item"id="i10">10</option>
+    <option class="dropdown-item"id="i11">11</option>
+   	<option class="dropdown-item"id="i12">12</option>
+    <option class="dropdown-item"id="i13">13</option>
+    <option class="dropdown-item"id="i14">14</option>
+    <option class="dropdown-item"id="i15">15</option>
+    <option class="dropdown-item"id="i16">16</option>
+    <option class="dropdown-item"id="i17">17</option>
+    <option class="dropdown-item"id="i18">18</option>
+    <option class="dropdown-item"id="i19">19</option>
+    <option class="dropdown-item"id="i20">20</option>
+    <option class="dropdown-item"id="i21">21</option>
+    <option class="dropdown-item"id="i22">22</option>
+   	<option class="dropdown-item"id="i23">23</option>
+    <option class="dropdown-item"id="i24">24</option>
+    <option class="dropdown-item"id="i25">25</option>
+    <option class="dropdown-item"id="i26">26</option>
+    <option class="dropdown-item"id="i27">27</option>
+    <option class="dropdown-item"id="i28">28</option>
+    <option class="dropdown-item"id="i29">29</option>
+    <option class="dropdown-item"id="i30">30</option>
+    <option class="dropdown-item"id="i31">31</option>
+
+  </select>
+</div>
+  <div class="btn-group">
+  <select required class="btn btn-primary dropdown-toggle" data-toggle="dropdown"name="month" aria-haspopup="true" aria-expanded="false"id="sel_month">
+   	<option class="dropdown-item"id="i32"value="">Month</option>
+   	<option class="dropdown-item"id="i33">Janurary</option>
+    <option class="dropdown-item"id="i34">Feburary</option>
+    <option class="dropdown-item"id="i35">March</option>
+    <option class="dropdown-item"id="i36">April</option>
+    <option class="dropdown-item"id="i37">May</option>
+    <option class="dropdown-item"id="i38">June</option>
+    <option class="dropdown-item"id="i39">July</option>
+    <option class="dropdown-item"id="i40">August</option>
+    <option class="dropdown-item"id="i41">September</option>
+    <option class="dropdown-item"id="i42">October</option>
+    <option class="dropdown-item"id="i43">November</option>
+    <option class="dropdown-item"id="i44">December</option>
+
+  </select>
+</div>
+<div class="btn-group">
+  <select required class="btn btn-primary dropdown-toggle" data-toggle="dropdown" name = "year" aria-haspopup="true" aria-expanded="false"id="sel_year">
+
+   	<option class="dropdown-item"id="i45"value="">Year</option>
+   	<option class="dropdown-item"id="i46">2008</option>
+    <option class="dropdown-item"id="i47">2007</option>
+    <option class="dropdown-item"id="i48">2006</option>
+    <option class="dropdown-item"id="i49">2005</option>
+    <option class="dropdown-item"id="i50">2004</option>
+   	<option class="dropdown-item"id="i51">2003</option>
+    <option class="dropdown-item"id="i52">2002</option>
+    <option class="dropdown-item"id="i53">2001</option>
+    <option class="dropdown-item"id="i54">2000</option>
+    <option class="dropdown-item"id="i55">1999</option>
+    <option class="dropdown-item"id="i56">1998</option>
+    <option class="dropdown-item"id="i57">1997</option>
+    <option class="dropdown-item"id="i58">1996</option>
+    <option class="dropdown-item"id="i59">1995</option>
+    <option class="dropdown-item"id="i60">1994</option>
+
+
+  </select>
+</div>
+</div>
+				<p class="_fnt">Gender</p>
+				 <div class="form-check">
+           <div class="btn-group">
+           <select required class="btn btn-primary dropdown-toggle" data-toggle="dropdown" name="gender" aria-haspopup="true" aria-expanded="false"id="sel_month">
+              <option class="dropdown-item"id="i32"value="">Gender</option>
+              <option class="dropdown-item"id="i33">Male</option>
+              <option class="dropdown-item"id="i33">Female</option>
+             <option class="dropdown-item"id="i34">Other</option>
+
+
+           </select>
+         </div>
+
+				<center><!--<input type="submit" value="Sign Up!">-->
+					<button type="submit" id="mysubmit" class="btn btn-outline-primary" >Register</button>
+				</center>
+				</form>
+	</div>
+</div>
+
+
+
+<hr class="_dwnhr">
+<p class="dwn_fnt"> &#169 EyeCare clinic , All Rights Reserved> </p>
+
+
+</body>
+</html>
