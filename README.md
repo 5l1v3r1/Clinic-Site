@@ -7,7 +7,7 @@
 
 ## USAGE
 
-```python3 manage.py createsuper```
+```python3 manage.py createsuperuser```
 
 **Then goto admin panel and register a doctor manually to Users**
 
